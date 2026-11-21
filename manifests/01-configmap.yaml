@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cha-config
+  namespace: cha-express
+data:
+  SHOP_NAME: "Rahim Mama's Cha"
+  CITY: "Dhaka"
+  THEME_COLOR: "#006400"
+  OPENING_HOURS: "7:00 AM - 11:00 PM"
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Rahim Mama's Cha</title>
+      <style>
+        body { font-family: sans-serif; background:#fff8e7; text-align:center; }
+        h1 { color:#8B4513; }
+        table { margin:auto; border-collapse:collapse; }
+        td, th { padding:8px 20px; border-bottom:1px solid #ccc; }
+      </style>
+    </head>
+    <body>
+      <h1>☕ Rahim Mama's Cha Changed Heading</h1>
+      <p>Dhaka · Open 7:00 AM - 11:00 PM</p>
+      <table>
+        <tr><th>Item</th><th>Price</th></tr>
+        <tr><td>Doodh Cha</td><td>20 BDT</td></tr>
+        <tr><td>Lal Cha (Red Tea)</td><td>10 BDT</td></tr>
+        <tr><td>Masala Cha</td><td>30 BDT</td></tr>
+        <tr><td>Lebu Cha (Lemon Tea)</td><td>15 BDT</td></tr>
+        <tr><td>Singara</td><td>10 BDT</td></tr>
+      </table>
+    </body>
+    </html>
